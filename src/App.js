@@ -23,7 +23,7 @@ class App extends React.Component {
                             { model: 'reportee', value: 'Stuff', type: '1' },
                             { model: 'salary', value: 'Boxter', type: '1' }
                     
-                         ],
+                        ],
                         [
                             { model: 'empName', value: 'A', type: '1' },
                             { model: 'id', value: '226052', type: '1' },
@@ -51,7 +51,23 @@ class App extends React.Component {
                             { model: 'empName', value: 'B', type: '1' },
                             { model: 'id', value: '226052', type: '1' },
                             { model: 'dept', value: '2', type: '2', secondaryData: [{ id: "0", label: "Harley" }, { id: "1", label: "Celica" }, { id: "2", label: "Joker" }] },
-                            { model: 'reportee', value: 'Stuff', type: '1' },
+                            { model: 'reportee', value: 'Stuff', type: '0',secondaryData: {
+                                showCheckBox: false,
+                                headerNames: [
+                                    { headerName: 'Employee Name', model: 'empName' },
+                                    { headerName: 'Employee Id', model: 'id' }
+                                ],
+                                rowData: [
+                                    [
+                                        { model: 'empName', value: '1', type: '1' },
+                                        { model: 'id', value: '226052', type: '1' },
+                                    ],
+                                    [
+                                        { model: 'empName', value: '1', type: '1' },
+                                        { model: 'id', value: '226052', type: '1' },
+                                    ]
+                                ]
+                            } },
                             { model: 'salary', value: 'Boxter', type: '1' }
                         ],
                         [

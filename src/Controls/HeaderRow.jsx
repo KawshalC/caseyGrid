@@ -11,10 +11,15 @@ class HeaderRow extends React.Component{
          else
           return(<div></div> );
       }
+      showDeleteIcon(){
+        if(this.props.showCheckBox)
+          return (<div className="firstHeaderCell"><i className="fa fa-trash"></i></div>);
+        return (<div className="firstHeaderCell"></div>);
+      }
       render(){
         return(
           <div style={{display:"table-header-group"}} className="headerRow">
-            {<div style={{display:"table-cell"}}></div>} 
+            {this.showDeleteIcon()} 
             {this.props.rowHeaders.map(function (rowHeader, index) {
               return <HeaderCell key={rowHeader.headerName} rowHeader={rowHeader}></HeaderCell>;
             })}

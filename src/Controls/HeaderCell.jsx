@@ -9,7 +9,7 @@ class HeaderCell extends React.Component{
       }
       render(){
         return(<div style={{display: "table-cell"}}>
-            <span className="headerCell">{this.state.rowHeader.headerName}</span>
+            <div className="headerCell">{this.state.rowHeader.headerName}</div>
             </div>);
       }
 }
