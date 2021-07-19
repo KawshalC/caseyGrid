@@ -16,10 +16,19 @@ class App extends React.Component {
                     { headerName: 'Salary', model: 'salary' },
                 ],
                 rowData: [
-                    [   {
-                            model: 'empName',
-                            value: 'AA',
-                            secondaryData: {
+                        [   
+                            { model: 'empName',value: 'AA',type: '1'},
+                            { model: 'id', value: '226052', type: '1' },
+                            { model: 'dept', value: '2', type: '2', secondaryData: [{ id: "0", label: "Harley" }, { id: "1", label: "Celica" }, { id: "2", label: "Joker" }] },
+                            { model: 'reportee', value: 'Stuff', type: '1' },
+                            { model: 'salary', value: 'Boxter', type: '1' }
+                    
+                         ],
+                        [
+                            { model: 'empName', value: 'A', type: '1' },
+                            { model: 'id', value: '226052', type: '1' },
+                            { model: 'dept', value: '2', type: '2', secondaryData: [{ id: "0", label: "Harley" }, { id: "1", label: "Celica" }, { id: "2", label: "Joker" }] },
+                            { model: 'reportee', value: 'Stuff', type: '0',secondaryData: {
                                 showCheckBox: true,
                                 headerNames: [
                                     { headerName: 'Employee Name', model: 'empName' },
@@ -35,20 +44,7 @@ class App extends React.Component {
                                         { model: 'id', value: '226052', type: '1' },
                                     ]
                                 ]
-                            },
-                            type: '0'
-                        },
-                        { model: 'id', value: '226052', type: '1' },
-                        { model: 'dept', value: '2', type: '2', secondaryData: [{ id: "0", label: "Harley" }, { id: "1", label: "Celica" }, { id: "2", label: "Joker" }] },
-                        { model: 'reportee', value: 'Stuff', type: '1' },
-                        { model: 'salary', value: 'Boxter', type: '1' }
-                    
-                    ],
-                        [
-                            { model: 'empName', value: 'A', type: '1' },
-                            { model: 'id', value: '226052', type: '1' },
-                            { model: 'dept', value: '2', type: '2', secondaryData: [{ id: "0", label: "Harley" }, { id: "1", label: "Celica" }, { id: "2", label: "Joker" }] },
-                            { model: 'reportee', value: 'Stuff', type: '1' },
+                            } },
                             { model: 'salary', value: 'Boxter', type: '1' }
                         ],
                         [

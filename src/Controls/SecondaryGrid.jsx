@@ -17,7 +17,10 @@ class SecondaryGrid extends React.Component{
 
       showHideSecondaryTable(){
           if(this.state.isOpen)
-            return(<Grid data={this.props.data}></Grid>);
+            return(
+            <div className="secondaryGrid">
+              <Grid data={this.props.data}></Grid>
+            </div>);
       }
 
       render(){
