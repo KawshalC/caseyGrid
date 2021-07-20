@@ -25,7 +25,7 @@ class DataRow extends React.Component{
       //<div className={"btn-group pull-right " + (this.props.showBulkActions ? 'show' : 'hidden')}></div>
       render(){
         return(
-          <div style={{display:"table-row"}} className={`dataRow ${this.state.selected ?`selected`:``}`}>            
+          <div style={{display:"table-row"}} className={`dataRow ${this.state.selected ?`rowSelected`:``}`}>            
             {this.showCheckBox()}          
             {this.props.rowData.map(function (cellData, index) {
               return <Cell key={index} cellData={cellData}></Cell>;
