@@ -12,8 +12,7 @@ class DataRow extends React.Component{
       showCheckBox(){
         if(this.props.showCheckBox)
           return(<div className="gridCheckbox" style={{display:" table-cell"}}>
-            <input id={} type="checkbox" onChange={()=>this.selectDeselectRow()}></input>
-            <label for="checkboxFourInput"></label>
+            <input type="checkbox" onChange={()=>this.selectDeselectRow()}></input>
             </div> );
         else
           return(<div></div> );
@@ -25,7 +24,6 @@ class DataRow extends React.Component{
       selectDeselectRow(){
         this.setState({selected:!this.state.selected});
       }
-      //<div className={"btn-group pull-right " + (this.props.showBulkActions ? 'show' : 'hidden')}></div>
       render(){
         return(
           <div style={{display:"table-row"}} className={`dataRow ${this.state.selected ?`rowSelected`:``}`}>            
