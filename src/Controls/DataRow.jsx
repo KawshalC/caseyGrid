@@ -11,7 +11,10 @@ class DataRow extends React.Component{
 
       showCheckBox(){
         if(this.props.showCheckBox)
-          return(<div className="gridCheckbox" style={{display:" table-cell"}}><input type="checkbox" onChange={()=>this.selectDeselectRow()}></input></div> );
+          return(<div className="gridCheckbox" style={{display:" table-cell"}}>
+            <input id={} type="checkbox" onChange={()=>this.selectDeselectRow()}></input>
+            <label for="checkboxFourInput"></label>
+            </div> );
         else
           return(<div></div> );
       }

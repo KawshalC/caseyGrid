@@ -20,7 +20,6 @@ class EditableBox extends React.Component{
                     <textarea
                         rows={this.state.rows} 
                         defaultValue={this.props.value} 
-                        placeholder={'Enter Text'}
                         onBlur={this.onFocusOut}>
                     </textarea>
                 </div>);
