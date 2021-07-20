@@ -81,8 +81,18 @@ body {
   font-family:MoonBold ;
   text-align: center;
 }
+.lastHeaderCell{
+  padding-right: 15px;
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+}
 .CaseyGrid .dataRow:nth-child(even)  {
   background:#fff;
+}
+.selected{
+  color: #FFFFFF;
+  background: #757575 !important;
 }
 .secondaryContainer {
   display: table-cell;
