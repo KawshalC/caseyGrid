@@ -18,8 +18,7 @@ class HeaderRow extends React.Component{
       }
       showCrossIcon(){
         if(this.props.showCrossButton)
-          return (<div className="lastHeaderCell"><i className="fa fa-times"></i></div>);
-        return (<div className="lastHeaderCell"></div>);
+          return (<div className="lastHeaderCell"><i className="fa fa-times"></i></div>);        
       }
       render(){
         return(

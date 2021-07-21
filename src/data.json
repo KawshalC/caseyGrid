@@ -1,5 +1,6 @@
 [
     {
+  "showCrossIcon":false,
   "showCheckBox": true,
   "headerNames": [
     {
@@ -100,6 +101,7 @@
         "value": "Stuff",
         "type": "0",
         "secondaryData": {
+          "showCrossIcon":true,
           "showCheckBox": true,
           "headerNames": [
             {

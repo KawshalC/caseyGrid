@@ -23,11 +23,11 @@
     position: absolute;
     z-index:99;
     width: 95%;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px #757575;
     background-color: white;
     top: 95%;
-    border-top: 0px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
   }
   
   .dropdown-item {

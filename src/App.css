@@ -11,6 +11,7 @@
   src:  url('../src/Fonts/Moon/Moon-Bold.otf');
 }
 @import url("./Dropdown.css");
+/* Let's get this party started */
 
 body {
   background-color: #F5F8F7;
@@ -102,6 +103,9 @@ body {
 }
 .rowSelected .dataRow{
   background: #ADADAD !important;
+}
+.rowSelected .dropdown-header i{
+  color: #00BFFF;
 }
 .rowSelected .rowSelected{
   color: #FFFFFF;

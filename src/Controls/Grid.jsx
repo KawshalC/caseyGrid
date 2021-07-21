@@ -11,9 +11,9 @@ class Grid extends React.Component{
       render(){
         return(
           <div className="CaseyGrid">
-            <HeaderRow showCheckBox={this.state.showCheckBox} rowHeaders={this.state.headerNames} showCrossButton={true}></HeaderRow>
+            <HeaderRow showCheckBox={this.state.showCheckBox} rowHeaders={this.state.headerNames} showCrossButton={this.state.showCrossIcon}></HeaderRow>
             {this.state.rowData.map((data, index)=> {
-              return <DataRow key={index} showCheckBox={this.state.showCheckBox}  rowData={data} showCrossButton={true}></DataRow>;
+              return <DataRow key={index} showCheckBox={this.state.showCheckBox}  rowData={data} showCrossButton={this.state.showCrossIcon}></DataRow>;
             })}
           </div>
         )

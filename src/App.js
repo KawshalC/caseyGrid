@@ -11,9 +11,8 @@ class App extends React.Component {
         }
         render() {
             return ( <div className = "App" id="mainApp">
-                {data.map(datum => {
-                    debugger;
-                    return <Grid data = { datum } > </Grid>})
+                {data.map((datum,index) => {
+                    return <Grid key = {index} data = {datum} > </Grid>})
                 }                
                 </div >);
             }
