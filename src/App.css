@@ -94,13 +94,17 @@ body {
 }
 .rowSelected{
   color: #FFFFFF;
-  background: #757575 !important;
+  background: #ADADAD !important;
 }
 .rowSelected .dropdown-body.open{
   color: #FFFFFF;
-  background: #757575 !important;
+  background: #ADADAD !important;
 }
 .rowSelected .dataRow{
+  background: #ADADAD !important;
+}
+.rowSelected .rowSelected{
+  color: #FFFFFF;
   background: #757575 !important;
 }
 .secondaryContainer {
