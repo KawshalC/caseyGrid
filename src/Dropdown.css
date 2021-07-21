@@ -22,7 +22,7 @@
     display: block;
     position: absolute;
     z-index:99;
-    width: 95%;
+    width: auto;
     background-color: white;
     top: 95%;
     border-bottom: 1px solid #EEEEEE;
@@ -33,6 +33,7 @@
   .dropdown-item {
     padding: 10px;
     text-align: left !important;
+    white-space: nowrap;
   }
   
   .dropdown-item:hover {

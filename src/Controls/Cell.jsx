@@ -36,6 +36,11 @@ class Cell extends React.Component{
                 <DropDown data={this.state.cellData.secondaryData} value={this.state.cellData.value}>
                 </DropDown>
             </div>);
+            else if(this.state.cellData.type === "3")
+            return(
+            <div className="tableCellContainer" style={{display:"table-cell"}}>
+                <input type="checkbox" dvalue={this.state.cellData.value}></input>
+            </div>)
         return (<div className="tableCellContainer" style={{display:"table-cell"}}></div>);
       }
 }

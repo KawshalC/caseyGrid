@@ -45,13 +45,12 @@ body {
   border: 1px solid black;
 }
 
-.CaseyGrid .tableCellContainer{
-  min-width: 200px;
-  max-width: 250px;
-}
 .CaseyGrid .headerRow{
   background-color:#36304a;
   color:#fff;
+}
+.tableCellContainer{
+  text-align: center;
 }
 .tableCellContainer textarea {
 	border: none;
@@ -83,6 +82,8 @@ body {
   font-size: 20px;
   font-family:MoonBold ;
   text-align: center;
+  padding: 0 10px 0 10px;
+  white-space: nowrap;
 }
 .lastHeaderCell{
   padding-right: 15px;
