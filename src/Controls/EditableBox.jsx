@@ -17,11 +17,12 @@ class EditableBox extends React.Component{
           if(this.props.showTextBox)
             return(
                 <div>  
-                    <textarea
+                    <input
+                        type="text"
                         rows={this.state.rows} 
                         defaultValue={this.props.value} 
                         onBlur={this.onFocusOut}>
-                    </textarea>
+                    </input>
                 </div>);
           return(
             <div onDoubleClick={this.props.showHideTextBox}>

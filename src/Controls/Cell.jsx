@@ -39,7 +39,7 @@ class Cell extends React.Component{
             else if(this.state.cellData.type === "3")
             return(
             <div className="tableCellContainer" style={{display:"table-cell"}}>
-                <input type="checkbox" dvalue={this.state.cellData.value}></input>
+                <input type="checkbox" defaultChecked={this.state.cellData.value}></input>
             </div>)
         return (<div className="tableCellContainer" style={{display:"table-cell"}}></div>);
       }

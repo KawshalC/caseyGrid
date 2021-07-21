@@ -1,5 +1,4 @@
 .dropdown {
-    width: 85%;
     border-radius: 10px;
     position:relative;
   }
@@ -10,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
   
   .dropdown-body {
@@ -55,8 +55,10 @@
     color: #91A5BE;
     transform: rotate(0deg);
     transition: all .2s ease-in-out;
+    padding-right: 20px;
   }
   
   .icon.open {
     transform: rotate(90deg);
+    padding: 0;
   }

@@ -133,7 +133,7 @@
       },
       {
         "model": "salary",
-        "value": true,
+        "value": false,
         "type": "3"
       },
       {
