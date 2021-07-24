@@ -55,7 +55,7 @@
     color: #91A5BE;
     transform: rotate(0deg);
     transition: all .2s ease-in-out;
-    padding-right: 20px;
+    margin-right: 20px;
   }
   
   .icon.open {
