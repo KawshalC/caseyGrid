@@ -3,17 +3,21 @@ import HeaderCell from './HeaderCell';
 
 class HeaderRow extends React.Component{
     constructor(props){
-        super(props);        
+        super(props);
+        this.state={
+          hasDockedCols: props.dockedCols.length > 0
+        }       
       }
-      showCheckBox(){
-        if(this.props.showCheckBox)
-          return(<div><input type="checkbox"></input></div> );
-         else
-          return(<div></div> );
-      }
+      // showCheckBox(){
+      //   if(this.props.showCheckBox)
+      //     return(<div><input type="checkbox"></input></div> );
+      //    else
+      //     return(<div></div> );
+      // }
       showDeleteIcon(){
         if(this.props.showCheckBox)
-          return (<div className="firstHeaderCell"><i className="fa fa-trash"></i></div>);
+        //className={`firstHeaderCell ${this.state.hasDockedCols ?`stickyCell`:``}`}
+          return (<div className={`firstHeaderCell ${this.state.hasDockedCols ?`stickyCell`:``}`}><i className="fa fa-trash"></i></div>);
         return (<div className="firstHeaderCell"></div>);
       }
       showCrossIcon(){
@@ -22,7 +26,7 @@ class HeaderRow extends React.Component{
       }
       render(){
         return(
-          <div style={{display:"table-header-group"}} className="headerRow">
+          <div className="headerRow">
             {this.showDeleteIcon()} 
             {this.props.rowHeaders.map(function (rowHeader, index) {
               return <HeaderCell key={rowHeader.headerName} rowHeader={rowHeader}></HeaderCell>;

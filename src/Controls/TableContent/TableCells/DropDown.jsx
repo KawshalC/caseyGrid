@@ -23,7 +23,9 @@ class DropDown extends React.Component{
     return (
       <div className='dropdown'>
         <div className='dropdown-header' onClick={()=>this.toggleDropdown()}>
-          {this.state.selectedItem ? this.state.items.find(item => item.id === this.state.selectedItem).label : "Select your destination"}
+          <div className="dropdown-header-name">
+            {this.state.selectedItem ? this.state.items.find(item => item.id === this.state.selectedItem).label : "Select your destination"}
+          </div>
           <i className={`fa fa-chevron-right icon ${this.state.isOpen && "open"}`}></i>
         </div>
         <div className={`dropdown-body ${this.state.isOpen && 'open'}`}>

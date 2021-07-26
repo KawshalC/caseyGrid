@@ -1,5 +1,5 @@
 import React from 'react';
-import TextareaCounter from 'react-textarea-counter';
+
 class TextBox extends React.Component{
     constructor(props){
         super(props); 

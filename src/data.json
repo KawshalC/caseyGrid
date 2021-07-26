@@ -2,6 +2,7 @@
     {
   "showCrossIcon":false,
   "showCheckBox": true,
+  "dockedColNames":["empName","empid"],
   "headerNames": [
     {
       "headerName": "Employee Name",
@@ -93,6 +94,7 @@
         "secondaryData": {
           "showCrossIcon":true,
           "showCheckBox": true,
+          "dockedColNames":["empName","empid"],
           "headerNames": [
             {
               "headerName": "Employee Name",

@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Grid from './Controls/Grid';
+import Grid from './Controls/TableContent/Grid';
 import data from './data.json';
 
 class App extends React.Component {
@@ -9,10 +9,16 @@ class App extends React.Component {
             super(props);
             this.state = {};
         }
-        render() {
+        componentWillMount(){
+            localStorage.setItem('currentData', JSON.stringify(data));
+            var items = JSON.parse(localStorage.getItem("currentData"));
+            this.setState({data:items});
+        }
+        render() {            
             return ( <div className = "App" id="mainApp">
-                {data.map((datum,index) => {
-                    return <Grid key = {index} data = {datum} > </Grid>})
+                {
+                    this.state.data.map((datum,index) => {
+                        return <Grid key = {index} data = {datum} > </Grid>})
                 }                
                 </div >);
             }

@@ -8,7 +8,7 @@ class HeaderCell extends React.Component{
           }
       }
       render(){
-        return(<div style={{display: "table-cell"}}>
+        return(<div className="headerCellContainer">
             <div className="headerCell">{this.state.rowHeader.headerName}</div>
             </div>);
       }
