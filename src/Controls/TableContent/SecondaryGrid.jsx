@@ -1,6 +1,5 @@
 import React from 'react';
 import Grid from './Grid';
-import $ from 'jquery'; 
 
 class SecondaryGrid extends React.Component{
     constructor(props){
